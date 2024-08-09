@@ -158,7 +158,7 @@ else {
       $triplet = "x64-osx-release"
     }
   }
-  ./vcpkg install ffmpeg[ffmpeg] --triplet=$triplet --host-triplet=$triplet --clean-buildtrees-after-build --clean-packages-after-build --recurse
+  ./vcpkg install ffmpeg[ffmpeg,ffprobe] --triplet=$triplet --host-triplet=$triplet --clean-buildtrees-after-build --clean-packages-after-build --recurse
   if ($IsWindowsPowerShell -or $IsWindows) {
     Copy-Item installed/$triplet/tools/ffmpeg/*.* $PSCustomScriptRoot/src
   }

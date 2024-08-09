@@ -1,2 +1,4 @@
 pydub
 SpeechRecognition
+openai-whisper
+numpy<2
