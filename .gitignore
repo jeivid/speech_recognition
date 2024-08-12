@@ -3,3 +3,5 @@ setup-ffmpeg.log
 *.wav
 *.exe
 *.dll
+.venv
+setup-venv.log
